@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "789304606066",
+    "firebase_url": "https://smarttrashbin-b190a.firebaseio.com",
+    "project_id": "smarttrashbin-b190a",
+    "storage_bucket": "smarttrashbin-b190a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:789304606066:android:f9a8ed801064aebd",
+        "android_client_info": {
+          "package_name": "com.example.steffythankam.smarttrashbin"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "789304606066-7vb5g6bba7v28t7fm645m8pdadies4g2.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.steffythankam.smarttrashbin",
+            "certificate_hash": "70da6ce72c255dacb9c786b97fee4516719496bc"
+          }
+        },
+        {
+          "client_id": "789304606066-ub8pjhq9p7kcf4agjsp04al85iv22fhn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA8SqfpRWS3X5kU1dhYQ28B5p60K8ZMVXU"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "789304606066-ub8pjhq9p7kcf4agjsp04al85iv22fhn.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
