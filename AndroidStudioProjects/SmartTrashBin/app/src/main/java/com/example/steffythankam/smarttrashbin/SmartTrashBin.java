@@ -8,6 +8,7 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.Toast;
 
 import com.google.android.gms.tasks.OnCompleteListener;
@@ -27,6 +28,8 @@ public class SmartTrashBin extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_smart_trash_bin);
 
+
+
         mAuth = FirebaseAuth.getInstance();
         username = (EditText) findViewById(R.id.username);
         password = (EditText) findViewById(R.id.password);
@@ -38,7 +41,7 @@ public class SmartTrashBin extends AppCompatActivity {
                 String email = username.getText().toString();
                 String pass = password.getText().toString();
                 mAuth.signInWithEmailAndPassword(email, pass)
-                        .addOnCompleteListener((Activity) getApplicationContext(), new OnCompleteListener<AuthResult>() {
+                        .addOnCompleteListener(SmartTrashBin.this, new OnCompleteListener<AuthResult>() {
                             @Override
                             public void onComplete(@NonNull Task<AuthResult> task) {
                                 if (task.isSuccessful()) {
@@ -52,7 +55,7 @@ public class SmartTrashBin extends AppCompatActivity {
                                     Toast.makeText(SmartTrashBin.this, "Authentication failed.",
                                             Toast.LENGTH_SHORT).show();
                                 }}
-                            });
+                        });
             }
         });
     }
