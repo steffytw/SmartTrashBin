@@ -5,9 +5,11 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/smtbin"
     android:gravity="center"
     android:orientation="vertical"
     android:padding="10dp"
+    tools:background="@drawable/smtbin"
     tools:layout_editor_absoluteY="81dp">
 
 
@@ -15,21 +17,20 @@
         android:id="@+id/button2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Button" />
+        android:text="Odour Level" />
 
     <Button
         android:id="@+id/button3"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Button" />
+        android:text="Bin Status" />
 
     <Button
         android:id="@+id/button4"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:onClick="show_odour_status"
-        android:text="Button" />
-
+        android:text="Exit" />
 
 
 </LinearLayout>
