@@ -104,7 +104,7 @@ public class SmartTrashBin extends AppCompatActivity implements View.OnClickList
 
             // Signed in successfully, show authenticated UI.
             Toast.makeText(this,"Login Success",Toast.LENGTH_LONG).show();
-            Intent intent = new Intent(this, Activity_2.class);
+            Intent intent = new Intent(this, Activity2.class);
             startActivity(intent);
 //            updateUI(account);
         } catch (ApiException e) {
