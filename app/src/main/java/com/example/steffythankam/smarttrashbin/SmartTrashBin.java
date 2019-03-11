@@ -83,5 +83,8 @@ public class SmartTrashBin extends AppCompatActivity implements View.OnClickList
             Log.w("Debug", "signInResult:failed code=" + e.getStatusCode());
 //            updateUI(null);
         }
+        catch (Exception e) {
+            Log.w("Debug",e.toString());
+        }
     }
 }
