@@ -41,36 +41,7 @@ public class SmartTrashBin extends AppCompatActivity implements View.OnClickList
         // Build a GoogleSignInClient with the options specified by gso.
         mGoogleSignInClient = GoogleSignIn.getClient(this, gso);
         findViewById(R.id.sign_in_button).setOnClickListener(this);
-//
-//        mAuth = FirebaseAuth.getInstance();
-//        username = (EditText) findViewById(R.id.username);
-//        password = (EditText) findViewById(R.id.password);
-//        login = (Button) findViewById(R.id.button);
-//
-//        login.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                String email = username.getText().toString();
-//                String pass = password.getText().toString();
-//                mAuth.signInWithEmailAndPassword(email, pass)
-//                        .addOnCompleteListener(SmartTrashBin.this, new OnCompleteListener<AuthResult>() {
-//                            @Override
-//                            public void onComplete(@NonNull Task<AuthResult> task) {
-//                                if (task.isSuccessful()) {
-//                                    // Sign in success, update UI with the signed-in user's information
-//                                    FirebaseUser user = mAuth.getCurrentUser();
-//                                    Log.d("Steffy","Successful");
-//
-//                                } else {
-//                                    // If sign in fails, display a message to the user.
-//                                    Log.w("Steffy", "signInWithEmail:failure", task.getException());
-//                                    Toast.makeText(SmartTrashBin.this, "Authentication failed.",
-//                                            Toast.LENGTH_SHORT).show();
-//                                }}
-//                        });
-//            }
-//        });
-//    }
+
     }
     private void signIn() {
         Intent signInIntent = mGoogleSignInClient.getSignInIntent();
@@ -80,10 +51,9 @@ public class SmartTrashBin extends AppCompatActivity implements View.OnClickList
     public void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
 
-        // Result returned from launching the Intent from GoogleSignInClient.getSignInIntent(...);
+
         if (requestCode == 1) {
-            // The Task returned from this call is always completed, no need to attach
-            // a listener.
+
             Task<GoogleSignInAccount> task = GoogleSignIn.getSignedInAccountFromIntent(data);
             handleSignInResult(task);
         }
@@ -104,7 +74,7 @@ public class SmartTrashBin extends AppCompatActivity implements View.OnClickList
 
             // Signed in successfully, show authenticated UI.
             Toast.makeText(this,"Login Success",Toast.LENGTH_LONG).show();
-            Intent intent = new Intent(this, Activity_2.class);
+            Intent intent = new Intent(this, Activity2.class);
             startActivity(intent);
 //            updateUI(account);
         } catch (ApiException e) {

@@ -17,20 +17,22 @@
         android:id="@+id/button2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:onClick="show_odour_level"
         android:text="Odour Level" />
 
     <Button
         android:id="@+id/button3"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:onClick="show_bin_status"
         android:text="Bin Status" />
 
     <Button
         android:id="@+id/button4"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:onClick="show_odour_status"
-        android:text="Exit" />
+        android:onClick="Exit"
+        android:text="SignOut" />
 
 
 </LinearLayout>
