@@ -27,9 +27,6 @@ public class Activity2 extends AppCompatActivity {
 
             }
         });
-        protected void onCreate(Bundle savedInstanceState) {
-            super.onCreate(savedInstanceState);
-            setContentView(R.layout.activity2);
 
             binbtn = (Button) findViewById(R.id.button3);
 
