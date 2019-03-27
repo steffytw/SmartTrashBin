@@ -13,5 +13,6 @@ public class binstatus extends AppCompatActivity {
         setContentView(R.layout.activity_binstatus);
     }
     public void show_bin_status(View view) {
+
     }
 }

@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
 
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -9,8 +10,8 @@
     android:gravity="center"
     android:orientation="vertical"
     android:padding="10dp"
-    tools:background="@drawable/smtbin"
     tools:layout_editor_absoluteY="81dp">
+
 
 
     <Button
@@ -33,6 +34,5 @@
         android:layout_height="wrap_content"
         android:onClick="Exit"
         android:text="SignOut" />
-
 
 </LinearLayout>
