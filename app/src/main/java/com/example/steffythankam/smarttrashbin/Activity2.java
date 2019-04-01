@@ -8,6 +8,7 @@ import android.widget.Button;
 
 public class Activity2 extends AppCompatActivity {
 
+
     Button odorbtn;
     Button binbtn;
 
