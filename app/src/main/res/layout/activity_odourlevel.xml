@@ -25,6 +25,8 @@
                 style="?android:attr/progressBarStyle"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:max="1024"
+                android:progress="256"
                 tools:layout_height="600dp"
                 tools:layout_width="400dp" />
         </LinearLayout>

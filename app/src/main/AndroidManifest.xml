@@ -11,9 +11,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".binstatus"></activity>
-        <activity android:name=".ggg" />
-        <activity android:name=".ss" />
+        <activity android:name=".signout"></activity>
+        <activity android:name=".binstatus" />
         <activity android:name=".SmartTrashBin">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

@@ -4,6 +4,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
+import android.widget.ProgressBar;
 
 import com.google.firebase.FirebaseApp;
 import com.google.firebase.database.DataSnapshot;
@@ -17,11 +18,14 @@ public class odourlevel extends AppCompatActivity {
 
     FirebaseDatabase database;
     DatabaseReference myRef;
+    ProgressBar pgbar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-         database = FirebaseDatabase.getInstance();
-         myRef  = database.getReference("odour");
+
+        database = FirebaseDatabase.getInstance();
+        myRef  = database.getReference("odour");
+         pgbar=findViewById(R.id.progressBar2);
          FirebaseApp.initializeApp(this);
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_odourlevel);
@@ -33,6 +37,7 @@ public class odourlevel extends AppCompatActivity {
                 // whenever data at this location is updated.
                 String value = dataSnapshot.getValue(String.class);
                 Log.d(TAG, "Value is: " + value);
+                pgbar.setProgress(Integer.parseInt(value));
             }
 
 
