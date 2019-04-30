@@ -24,20 +24,27 @@ public class odourlevel extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
 
         database = FirebaseDatabase.getInstance();
-        myRef  = database.getReference("odour");
+        myRef  = database.getReference("smarttrashbin-b190a").child("odour");
+        String val = myRef.toString();
+        System.out.println(val);
+        Log.d(TAG, "Value is: " + val);
          pgbar=findViewById(R.id.progressBar2);
          FirebaseApp.initializeApp(this);
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_odourlevel);
+        show_odour_level();
     }
-    public void show_odour_level(View view) {
+    public void show_odour_level() {
         myRef.addValueEventListener(new ValueEventListener() {
             public void onDataChange(DataSnapshot dataSnapshot) {
                 // This method is called once with the initial value and again
                 // whenever data at this location is updated.
+                //String value = dataSnapshot.getValue(String.class);
                 String value = dataSnapshot.getValue(String.class);
-                Log.d(TAG, "Value is: " + value);
-                pgbar.setProgress(Integer.parseInt(value));
+
+                //String val = ;
+                //Log.d(TAG, "Value is: " + value);
+                //pgbar1.setProgress(Integer.parseInt(value));
             }
 
 
