@@ -26,6 +26,7 @@ import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.auth.GoogleAuthProvider;
+import com.google.firebase.messaging.FirebaseMessaging;
 
 public class SmartTrashBin extends AppCompatActivity implements View.OnClickListener{
 
@@ -50,6 +51,7 @@ public class SmartTrashBin extends AppCompatActivity implements View.OnClickList
         // Build a GoogleSignInClient with the options specified by gso.
         mGoogleSignInClient = GoogleSignIn.getClient(this, gso);
         mAuth =FirebaseAuth.getInstance();
+        FirebaseMessaging.getInstance().subscribeToTopic("all");
         findViewById(R.id.sign_in_button).setOnClickListener(this);
 
     }
