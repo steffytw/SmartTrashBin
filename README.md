@@ -1,4 +1,4 @@
-                                                        SMART TRASH BIN
+                                                SMART TRASH BIN
 
 
 At the front end we use XML, C, Java, android and Backend PHP, MySQL are used. The different hardware components used in this project are Node MCU, Ultrasonic Sensor, MQ136. NodeMCU is an open source IoT platform. NodeMCU means a firmware rather than a development platform.NodeMCU controls the data traffic between the sensors and the firebase. It consists of analog and digital I/O
